@@ -1,5 +1,6 @@
 # Sintaxe C# básica
 
+
 ## 1. Tipos de Dados e Operadores
 
 No C#, as variáveis são **fortemente tipadas** (precisam ter um tipo definido).
