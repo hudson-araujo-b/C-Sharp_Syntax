@@ -45,7 +45,7 @@ switch (numero) {
 ### Laços de Repetição (Loops):
 
 ```csharp
-// For (quando você sabe quantas vezes vai repetir)
+// For (define o indice direto)
 for (int i = 0; i < 5; i++) {
     Console.WriteLine(i); 
 }
@@ -60,7 +60,7 @@ do {
     numero++;
 } while (numero < 20);
 
-// Foreach (Exclusivo para percorrer coleções/listas - muito usado!)
+// Foreach (Exclusivo para percorrer coleções/listas)
 string[] nomes = { "Ana", "Beto" };
 foreach (var n in nomes) {
     Console.WriteLine(n);
@@ -98,7 +98,7 @@ O Array tem tamanho fixo. Você define quantos itens ele terá na criação e n�
 int[] numeros = new int[5]; // Cria um array vazio para 5 números
 string[] frutas = { "Maçã", "Banana", "Uva" }; // Cria já preenchido (tamanho 3)
 
-// Acessar e Modificar (usa-se o índice, começando em 0)
+// Acessar e Modificar (usa o índice, começando em 0)
 Console.WriteLine(frutas[0]); // Imprime "Maçã"
 frutas[1] = "Pera"; // Muda "Banana" para "Pera"
 ```
@@ -164,5 +164,5 @@ Console.WriteLine($"O cliente {nome} tem {idade} anos.");
 
 ```csharp
 Console.Clear(); // Limpa toda a tela (útil para reiniciar loops)
-Console.ReadKey(); // Espera o usuário apertar QUALQUER tecla para continuar
+Console.ReadKey(); // Espera o usuário apertar qualquer tecla para continuar
 ```
