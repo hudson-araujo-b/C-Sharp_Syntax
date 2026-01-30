@@ -1,4 +1,6 @@
-# 1. Tipos de Dados e Operadores
+# Sintaxe C# básica
+
+## 1. Tipos de Dados e Operadores
 
 No C#, as variáveis são **fortemente tipadas** (precisam ter um tipo definido).
 
@@ -16,11 +18,11 @@ string nome = "Gemini";     // Texto (aspas duplas)
 // Lógicos: && (E), || (OU), ! (NÃO)
 ```
 
-# 2. Estruturas de Controle
+## 2. Estruturas de Controle
 
 Controlam o fluxo de execução do código.
 
-## Condicionais:
+### Condicionais:
 
 ```csharp
 // If / Else
@@ -38,7 +40,7 @@ switch (numero) {
 }
 ```
 
-## Laços de Repetição (Loops):
+### Laços de Repetição (Loops):
 
 ```csharp
 // For (quando você sabe quantas vezes vai repetir)
@@ -63,7 +65,7 @@ foreach (var n in nomes) {
 }
 ```
 
-# 3. Funções (Métodos)
+## 3. Funções (Métodos)
 
 Blocos de código reutilizáveis.
 
@@ -79,11 +81,11 @@ void Saudacao(string nome) {
 }
 ```
 
-# 4. Estruturas de Dados
+## 4. Estruturas de Dados
 
 Formas de organizar e armazenar informação para que um computador a possa utilizar de forma eficiente.
 
-## Array (Vetores)
+### Array (Vetores)
 
 O Array tem tamanho fixo. Você define quantos itens ele terá na criação e não pode mudar depois. É ideal quando você sabe exatamente a quantidade de dados.
 
@@ -97,7 +99,7 @@ Console.WriteLine(frutas[0]); // Imprime "Maçã"
 frutas[1] = "Pera"; // Muda "Banana" para "Pera"
 ```
 
-## List (Listas)
+### List (Listas)
 
 A Lista é dinâmica. Ela pode crescer ou diminuir conforme você adiciona ou remove itens. É a opção mais flexível.
 Nota: Requer using System.Collections.Generic;
