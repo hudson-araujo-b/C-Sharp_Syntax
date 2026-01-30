@@ -19,6 +19,7 @@ string nome = "Gemini";     // Texto (aspas duplas)
 // Lógicos: && (E), || (OU), ! (NÃO)
 ```
 
+
 ## 2. Estruturas de Controle
 
 Controlam o fluxo de execução do código.
@@ -66,6 +67,7 @@ foreach (var n in nomes) {
 }
 ```
 
+
 ## 3. Funções (Métodos)
 
 Blocos de código reutilizáveis.
@@ -81,6 +83,7 @@ void Saudacao(string nome) {
     Console.WriteLine("Olá " + nome);
 }
 ```
+
 
 ## 4. Estruturas de Dados
 
@@ -124,3 +127,42 @@ int quantidade = nomes.Count;
 ```
 
 
+## 5. Comandos Básicos de Console
+
+### Saída de Dados (Escrever na tela)
+
+Console.WriteLine(): Escreve o texto e pula para a próxima linha (o mais usado).
+
+Console.Write(): Escreve o texto e mantém o cursor na mesma linha.
+
+### Entrada de Dados (Ler o teclado)
+
+O comando principal é o Console.ReadLine().
+Ele sempre lê o que o usuário digita como texto (string). Se você quiser um número, precisa converter.
+
+```csharp
+// Lendo Texto
+Console.Write("Digite seu nome: ");
+string nome = Console.ReadLine(); // O programa para e espera o enter
+
+// Lendo Números (Conversão)
+Console.Write("Digite sua idade: ");
+string textoIdade = Console.ReadLine();
+int idade = int.Parse(textoIdade); // Transforma em texto 
+
+int numero;
+bool conseguiu = int.TryParse("123", out numero); // Tenta transformar para texto
+```
+### Formatação (Interpolacão)
+
+```csharp
+Console.WriteLine("O cliente " + nome + " tem " + idade + " anos.");
+Console.WriteLine($"O cliente {nome} tem {idade} anos.");
+```
+
+### Controle da Janela
+
+```csharp
+Console.Clear(); // Limpa toda a tela (útil para reiniciar loops)
+Console.ReadKey(); // Espera o usuário apertar QUALQUER tecla para continuar
+```
